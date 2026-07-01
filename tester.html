@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haaroun Khan Project</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 70%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #222;
+            color: white;
+            padding: 15px;
+        }
+
+        button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Haaroun Khan Project</h1>
+    <p>Welcome to my simple website.</p>
+</header>
+
+<main>
+    <div class="card">
+        <h2>About This Project</h2>
+        <p>
+            This is a basic website created using HTML, CSS, and JavaScript.
+            It serves as an introduction to web development.
+        </p>
+
+        <h3>Skills Used</h3>
+        <ul style="list-style-position: inside;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="message"></p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Haaroun Khan</p>
+</footer>
+
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML =
+        "Thanks for visiting the Haaroun Khan Project!";
+}
+</script>
+
+</body>
+</html>
